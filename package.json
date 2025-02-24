@@ -1,0 +1,28 @@
+{
+  "name": "chrome_extension_scaffold",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "watch": "webpack --mode=development --watch",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "hollees.org",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/chrome": "^0.0.306",
+    "copy-webpack-plugin": "^12.0.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "sass": "^1.85.0",
+    "sass-loader": "^16.0.5",
+    "ts-jest": "^29.2.6",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.7.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}

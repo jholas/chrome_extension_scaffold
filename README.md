@@ -1,3 +1,5 @@
+![node.js workflow](https://github.com/jholas/chrome_extension_scaffold/actions/workflows/node.js.yml/badge.svg)
+
 # Chrome Extension Scaffold
 
 ## Description

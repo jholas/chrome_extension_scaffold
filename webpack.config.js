@@ -1,5 +1,6 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
@@ -8,6 +9,7 @@ module.exports = {
     background: "./src/scripts/background.ts",
     content: "./src/scripts/content.ts",
     popup: "./src/scripts/popup.ts",
+    styles: "./src/styles/styles.scss"
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -22,16 +24,21 @@ module.exports = {
       },
       {
         test: /\.scss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader"
+        ],
       },
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin({ filename: "styles.css" }), // Extracted CSS file
     new CopyWebpackPlugin({
       patterns: [
         { from: "public", to: "." },
-        { from: "src/popup.html", to: "." },
-        { from: "src/styles/styles.scss", to: "." },
+        { from: "src/popup.html", to: "." }
       ],
     }),
   ],

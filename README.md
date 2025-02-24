@@ -13,6 +13,7 @@ This project is a scaffold for creating a Chrome extension. It provides a basic 
 - Instructions for loading the extension in Chrome
 - Example of message passing between background and content scripts
 - Jest tests ready with sample test
+- Tailwind v4.0 CSS framework
 
 ## Usage
 1. Clone the repository:

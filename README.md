@@ -27,12 +27,20 @@ This project is a scaffold for creating a Chrome extension. It provides a basic 
     ```sh
     npm install
     ```
-4. Load the extension in Chrome:
+4. Build project
+   ```sh
+    npm run build
+    ```
+    or build and watch for changes for development
+    ```sh
+    npm run watch
+    ```
+5. Load the extension in Chrome:
     - Open Chrome and go to `chrome://extensions/`
     - Enable "Developer mode" in the top right corner
     - Click "Load unpacked" and select the project directory
 
-5. Start developing your extension by modifying the files in the project directory.
+6. Start developing your extension by modifying the files in the project directory.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
